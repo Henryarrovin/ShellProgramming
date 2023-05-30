@@ -7,5 +7,5 @@ echo "Concatenated string is: $st"
 t=`echo "$st" | tr '[:lower:]' '[:upper:]'`
 echo "The changed case string is: $t"
 
-len=$(expr length "$st")
+len=`expr length "$st"`
 echo "Length of the string is: $len"
