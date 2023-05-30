@@ -4,7 +4,7 @@ read -p "Enter second string: " st2
 st="$st1$st2"
 echo "Concatenated string is: $st"
 
-t=$(echo "$st" | tr '[:lower:]' '[:upper:]')
+t=`echo "$st" | tr '[:lower:]' '[:upper:]'`
 echo "The changed case string is: $t"
 
 len=$(expr length "$st")
